@@ -9,6 +9,8 @@ function App() {
   const handleClick = async (event) => {
     setIsLoading(true)
     // TODO
+    setQuote
+    
     setIsLoading(false)
   }
 
