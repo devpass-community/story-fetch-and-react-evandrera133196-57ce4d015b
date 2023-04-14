@@ -9,8 +9,9 @@ function App() {
   const handleClick = async (event) => {
     setIsLoading(true)
     // TODO
-    setQuote
-    
+    const response = await fetch('https://meowfacts.herokuapp.com/');
+    const data = await response.json();
+    setQuote(data.text)
     setIsLoading(false)
   }
 
